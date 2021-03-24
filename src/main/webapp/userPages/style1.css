@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+input[type=password], input[type=text] {
+    border: 1px #b6e7f9 solid;
+    padding: 5px 10px
+}
+
+input[type=checkbox] {
+    vertical-align: middle;
+}
+
+.field {
+    text-align: center
+}
+
+label {
+    float: left;
+}
+
+.auto {
+    float: left
+}
+
+
+.myButton {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+#myButton2 button {
+    align-content: center;
+    bottom: 35px;
+    border-radius: 5px;
+    background-color: orangered;
+}
+
+/*Selection footer*/
+footer {
+    background: #483D8B;
+    color: white;
+    border-top: 2px solid silver;
+    margin-top: 5px;
+    padding: 1%;
+    padding-bottom: 1%;
+    height: 30px;
+    align: center;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+    transition: all 1s ease-out;
+}
+
+footer img:hover {
+    width: 40px;
+    height: 40px;
+}
+
+#page-wrap {
+    min-height: 90px;
+    margin-bottom: -10px;
+}
+
