@@ -1,4 +1,4 @@
-package com.example.FacultativeProject.users;
+package com.example.FacultativeProject.users.servlets;
 
 import org.apache.log4j.Logger;
 

@@ -1,5 +1,6 @@
-package com.example.FacultativeProject.users;
+package com.example.FacultativeProject.users.servlets;
 
+import com.example.FacultativeProject.users.jdbc.UserDB;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;

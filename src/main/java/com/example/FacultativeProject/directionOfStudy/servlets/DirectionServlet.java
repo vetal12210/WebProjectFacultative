@@ -1,5 +1,7 @@
-package com.example.FacultativeProject.directionOfStudy;
+package com.example.FacultativeProject.directionOfStudy.servlets;
 
+import com.example.FacultativeProject.directionOfStudy.entities.DirectionOfStudy;
+import com.example.FacultativeProject.directionOfStudy.jdbc.DirectionOfStudyDB;
 import org.apache.log4j.Logger;
 
 import javax.servlet.*;

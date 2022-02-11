@@ -1,4 +1,6 @@
-package com.example.FacultativeProject.subjects;
+package com.example.FacultativeProject.subjects.jdbc;
+
+import com.example.FacultativeProject.subjects.entities.Subject;
 
 import java.sql.*;
 import java.util.ArrayList;

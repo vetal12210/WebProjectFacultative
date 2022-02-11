@@ -1,4 +1,4 @@
-package com.example.FacultativeProject.subjects;
+package com.example.FacultativeProject.subjects.entities;
 
 import lombok.Getter;
 import lombok.Setter;

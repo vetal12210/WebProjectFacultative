@@ -1,4 +1,6 @@
-package com.example.FacultativeProject.directionOfStudy;
+package com.example.FacultativeProject.directionOfStudy.jdbc;
+
+import com.example.FacultativeProject.directionOfStudy.entities.DirectionOfStudy;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -1,5 +1,7 @@
-package com.example.FacultativeProject.subjects;
+package com.example.FacultativeProject.subjects.servlets;
 
+import com.example.FacultativeProject.subjects.jdbc.SubjectDB;
+import com.example.FacultativeProject.subjects.entities.Subject;
 import org.apache.log4j.Logger;
 
 import javax.servlet.*;

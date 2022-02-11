@@ -1,4 +1,4 @@
-package com.example.FacultativeProject.directionOfStudy;
+package com.example.FacultativeProject.directionOfStudy.entities;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;

@@ -1,4 +1,6 @@
-package com.example.FacultativeProject.users;
+package com.example.FacultativeProject.users.jdbc;
+
+import com.example.FacultativeProject.users.entities.User;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -13,11 +15,20 @@ public class UserDB {
     private static final String url = "jdbc:postgresql://localhost:5432/facultativeMyProj";
     private static final String username = "postgres";
     private static final String password = "aaaaa55555";
+    private String test = "users";
+
+    public UserDB(String test) {
+        this.test = test;
+    }
+
+    public UserDB() {
+
+    }
 
 
     public static ArrayList<User> select() {
 
-        ArrayList<User> users = new ArrayList<User>();
+        ArrayList<User> users = new ArrayList<>();
         try {
             Class.forName("org.postgresql.Driver").getDeclaredConstructor().newInstance();
             try (Connection conn = DriverManager.getConnection(url, username, password)) {

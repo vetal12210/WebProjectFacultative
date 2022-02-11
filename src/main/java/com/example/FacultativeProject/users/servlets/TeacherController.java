@@ -1,5 +1,7 @@
-package com.example.FacultativeProject.subjects;
+package com.example.FacultativeProject.users.servlets;
 
+import com.example.FacultativeProject.subjects.entities.Subject;
+import com.example.FacultativeProject.subjects.jdbc.SubjectDB;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -11,28 +13,27 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * SubjectServlet controller
+ * Teacher entity.
  *
  * @author V.Dulsky
  */
 
-@WebServlet("/subject")
-public class SubjectServlet extends HttpServlet {
+@WebServlet("/teachController")
+public class TeacherController extends HttpServlet {
 
-    private static final Logger log = Logger.getLogger(SubjectServlet.class);
+    private static final Logger log = Logger.getLogger(TeacherController.class);
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        log.debug("SubjectServlet starts");
+        log.debug("TeacherController starts");
 
         ArrayList<Subject> subjects = SubjectDB.select();
         request.setAttribute("subjects", subjects);
         log.trace("Request parameter: subjects --> " + subjects);
 
-        getServletContext().getRequestDispatcher("/userPages/subjectIndex.jsp").forward(request, response);
-
+        getServletContext().getRequestDispatcher("/userPages/teacherPage.jsp").forward(request, response);
 
     }
 
@@ -40,7 +41,7 @@ public class SubjectServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        log.debug("SubjectServlet ends");
+        log.trace("TeacherController ends");
 
     }
 }

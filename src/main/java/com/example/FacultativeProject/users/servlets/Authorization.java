@@ -1,5 +1,8 @@
-package com.example.FacultativeProject.users;
+package com.example.FacultativeProject.users.servlets;
 
+import com.example.FacultativeProject.users.jdbc.UserDB;
+import com.example.FacultativeProject.users.entities.Role;
+import com.example.FacultativeProject.users.entities.User;
 import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
@@ -64,11 +67,11 @@ public class Authorization extends HttpServlet {
                 log.trace("userRole --> " + userRole);
 
                 if (userRole == Role.ADMIN)
-                    response.sendRedirect(request.getContextPath() + "/adminController"); // PGR паттерн
+                    response.sendRedirect(request.getContextPath() + "/adminController"); // PRG паттерн
                 if (userRole == Role.CLIENT)
                     getServletContext().getRequestDispatcher("/userPages/main.jsp").forward(request, response);
                 if (userRole == Role.TEACHER)
-                    response.sendRedirect(request.getContextPath() + "/teachController"); // PGR паттерн
+                    response.sendRedirect(request.getContextPath() + "/teachController"); // PRG паттерн
             }
 
             session.setAttribute("user", user);
